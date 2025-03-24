@@ -161,3 +161,123 @@ const text = fruits.join(' ')
 console.log(text)
 
 ```
+1. **Print Numbers:**
+   - Write a `for` loop to print numbers from **1 to 10**.
+   
+   ```javascript
+    for(let i=1; i<= 10 ; i++){
+      console.log(i);
+    }
+   ```
+
+2. **Even Numbers:**
+   - Print all **even numbers** between **1 and 20**.
+
+   ```javascript
+    for(let i=2 ; i<= 20 ; i=i+2){
+      console.log(i);
+    }
+   ```
+
+3. **Sum of Numbers:**
+   - Use a `for` loop to find the **sum of numbers from 1 to 100**.
+
+   ```javascript
+   let sum=0
+   for(let i=1 ; i<= 100 ; i++){
+      sum=sum+i
+   }
+   console.log(sum);
+   ```
+
+4. **Multiplication Table:**
+   - Print the **multiplication table of 5** using a `for` loop.
+
+   ```javascript
+    for(let i=0 ; i<= 10 ; i++){
+      multiplication= 5 * i
+      console.log(multiplication);
+    }
+   ```
+
+5. **Array Elements:**
+   - Given an array, print each element:
+
+
+   ```javascript
+   const fruits = ["apple", "banana", "orange"];
+   for(let i=0 ; i< fruits.length ; i++){
+      console.log(fruits[i]);
+   }
+   ```
+
+6. **Count Down:**
+   - Write a `for` loop to **count down from 10 to 1** and print each number.
+
+   ```javascript
+   for(let i=10 ; i>0 ; i--){
+      console.log(i);
+   }
+   ```
+
+7. **Factorial:**
+   - Calculate the **factorial** of a number using a `for` loop.
+     - Example: `5! = 5 × 4 × 3 × 2 × 1 = 120`
+
+   ```javascript
+   let fact=1
+   for(let i=5 ; i>=1 ; i--){
+      fact= fact * i 
+   }
+   console.log(fact);
+   ```
+
+---
+
+8. **FizzBuzz Challenge:**
+   - Write a program that prints numbers from **1 to 50**:
+     - For multiples of **3**, print **"Fizz"**.
+     - For multiples of **5**, print **"Buzz"**.
+     - For multiples of **both 3 and 5**, print **"FizzBuzz"**.
+
+   ```javascript
+
+   for(let i=1 ; i<=50 ; i++){
+      if (i % 3 == 0){
+         console.log("Fizz");
+      }
+      else if (i % 5 == 0){
+         console.log("Buzz");
+      }
+      else if (i % 3 == 0 & i % 5 == 0){
+         console.log("FizzBuzz");
+      }
+      else {
+         console.log(i);
+      }
+   }
+   ```
+
+9. **Find the Largest Number:**
+   - Write a function to find the **largest number** in an array.
+
+
+   ```javascript
+   const numbers = [3, 7, 2, 9, 5];
+   max=0
+   for(let i=0 ; i<numbers.length ; i++){
+      if (i > max){
+         max = i
+      }
+
+
+   }
+   console.log(findLargest(numbers)); // Output: 9
+   ```
+
+10. **Reverse a String:**
+    - Create a function that **reverses a string** using a `for` loop.
+      ```javascript
+      console.log(reverseString("hello")); // Output: "olleh"
+      ```
+
